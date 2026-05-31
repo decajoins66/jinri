@@ -4,14 +4,13 @@
 
 ## 当前可用部署
 
-- Vercel 线上地址：https://jinri-lingqian.vercel.app
-- GitHub Pages 备用发布目录：`docs/`
+- GitHub Pages 发布目录：`docs/`
 
 ## 本地目录说明
 
 - `开发/web`：主前端页面与静态资源
 - `开发/server`：本地试玩用的轻量统计服务
-- `docs`：GitHub Pages 备用静态发布目录
+- `docs`：GitHub Pages 静态发布目录
 - `部署`：部署说明文档
 
 ## GitHub Pages
@@ -25,4 +24,3 @@
 ## 说明
 
 - GitHub Pages 版本默认不接统计接口
-- Vercel 版本已上线，可直接分享
