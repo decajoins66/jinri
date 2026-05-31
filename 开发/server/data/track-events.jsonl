@@ -1,0 +1,15 @@
+{"event":"home_view","session_id":"sess_test","timestamp":"2026-05-30T07:11:00.000Z","page":"home","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"page_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:24:59.775Z","page":"app","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"home_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:24:59.780Z","page":"home","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"category_click","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:19.996Z","page":"home","category":"mood","question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"question_select","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:21.789Z","page":"question","category":"mood","question_id":"mood_no_energy","mood":null,"sign_id":null,"sign_no":null}
+{"event":"state_select","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:22.506Z","page":"state","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":null,"sign_no":null}
+{"event":"draw_start","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:23.529Z","page":"draw","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":null,"sign_no":null}
+{"event":"draw_complete","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:25.132Z","page":"draw","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":"mood_002","sign_no":2}
+{"event":"result_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:25.134Z","page":"result","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":"mood_002","sign_no":2}
+{"event":"share_modal_open","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:28.651Z","page":"result","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":"mood_002","sign_no":2}
+{"event":"save_sign_click","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:25:28.651Z","page":"result","category":"mood","question_id":"mood_no_energy","mood":"hesitating","sign_id":"mood_002","sign_no":2}
+{"event":"page_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:28:27.439Z","page":"app","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"home_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:28:27.439Z","page":"home","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"page_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:28:27.805Z","page":"app","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
+{"event":"home_view","session_id":"sess_1780125899544_cqlt3u3f","timestamp":"2026-05-30T07:28:27.807Z","page":"home","category":null,"question_id":null,"mood":null,"sign_id":null,"sign_no":null}
