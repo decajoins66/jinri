@@ -1,0 +1,71 @@
+[
+  {
+    "key": "relationship",
+    "title": "关系",
+    "eyebrow": "近而未定",
+    "subtitle": "关于靠近、留白，还有那些没说出口的话",
+    "questions": [
+      {
+        "id": "relationship_wait_reply",
+        "title": "我在等一个回应",
+        "hint": "发出去的话、停着的聊天框，或者一直没等到的态度。"
+      },
+      {
+        "id": "relationship_take_initiative",
+        "title": "我不知道要不要主动",
+        "hint": "想靠近一点，又怕显得太用力。"
+      },
+      {
+        "id": "relationship_tired",
+        "title": "这段关系让我有点累",
+        "hint": "不是完全放不下，只是真的有点撑不动了。"
+      }
+    ]
+  },
+  {
+    "key": "choice",
+    "title": "选择",
+    "eyebrow": "心里有秤",
+    "subtitle": "卡在两个答案之间，想先借一口气",
+    "questions": [
+      {
+        "id": "choice_torn",
+        "title": "我在两个选项之间来回拉扯",
+        "hint": "两个都像有道理，越想越拿不定。"
+      },
+      {
+        "id": "choice_want_to_try",
+        "title": "我其实想冲，但又有点怕",
+        "hint": "心里已经偏向一个答案，只是还差一点胆子。"
+      },
+      {
+        "id": "choice_wrong_timing",
+        "title": "我不确定现在是不是好时机",
+        "hint": "不是不会选，是怕现在做决定太早或太晚。"
+      }
+    ]
+  },
+  {
+    "key": "mood",
+    "title": "心境",
+    "eyebrow": "先安顿己身",
+    "subtitle": "最近有点乱，想先把自己安顿一下",
+    "questions": [
+      {
+        "id": "mood_no_energy",
+        "title": "我最近一直提不起劲",
+        "hint": "不是想躺平，是整个人都像没接上电。"
+      },
+      {
+        "id": "mood_noisy_mind",
+        "title": "我脑子很吵，停不下来",
+        "hint": "事情没那么多，心里的声音倒是一刻没停。"
+      },
+      {
+        "id": "mood_need_stability",
+        "title": "我想先把自己稳住一点",
+        "hint": "不急着解决全部问题，先别让自己继续乱下去。"
+      }
+    ]
+  }
+]

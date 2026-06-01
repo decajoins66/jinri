@@ -1,0 +1,22 @@
+[
+  {
+    "key": "overthinking",
+    "label": "有点上头",
+    "desc": "脑子里全是这件事"
+  },
+  {
+    "key": "hesitating",
+    "label": "正在犹豫",
+    "desc": "两边都有道理，选不出来"
+  },
+  {
+    "key": "tired",
+    "label": "已经有点累了",
+    "desc": "不想再想了，想要一个答案"
+  },
+  {
+    "key": "steady",
+    "label": "想稳一点",
+    "desc": "不想冒险，想知道最安全的做法"
+  }
+]

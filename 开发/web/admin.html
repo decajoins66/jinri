@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日灵签数据面板</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="admin-body">
+  <div class="dashboard-shell">
+    <header class="dashboard-header">
+      <div>
+        <p class="dashboard-eyebrow">Jinri Lingqian Dashboard</p>
+        <h1>试玩数据面板</h1>
+        <p>这版只看首轮试玩最关键的数据，不做复杂 BI。</p>
+      </div>
+      <button id="refresh-dashboard" class="primary-button">刷新数据</button>
+    </header>
+
+    <section class="dashboard-grid" id="overview-cards"></section>
+
+    <section class="dashboard-section">
+      <div class="section-head">
+        <h2>主题点击</h2>
+        <p>先看大家更愿意点哪一类。</p>
+      </div>
+      <div id="category-cards" class="mini-grid"></div>
+    </section>
+
+    <section class="dashboard-section">
+      <div class="section-head">
+        <h2>签文表现</h2>
+        <p>结果页展示和保存点击，都能直接看到。</p>
+      </div>
+      <div class="table-wrap">
+        <table class="metrics-table">
+          <thead>
+            <tr>
+              <th>签号</th>
+              <th>签文 ID</th>
+              <th>结果页展示</th>
+              <th>保存点击</th>
+            </tr>
+          </thead>
+          <tbody id="sign-metrics-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <script src="./admin.js" defer></script>
+</body>
+</html>
