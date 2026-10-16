@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
-<title>保存到 Obsidian · 跳转测试</title>
+<title>保存到 Obsidian · 长短笔记通用</title>
 <style>
 :root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB",sans-serif;color-scheme:light}
 *{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;background:#f6f4fb;color:#292238;padding:24px}
@@ -21,12 +21,12 @@ footer{margin-top:22px;padding-top:18px;border-top:1px solid #eeeaf3;font-size:1
 <body>
 <main>
 <div class="logo">📓</div>
-<h1>正在打开 Obsidian…</h1>
-<p>如果手机允许从网页启动 Obsidian，就会自动创建下面这篇测试笔记。</p>
+<h1 id="title">正在打开 Obsidian…</h1>
+<p id="description">如果手机允许从网页启动 Obsidian，就会自动创建下面这篇测试笔记。</p>
 <div class="filename" id="file">ChatGPT一键保存测试.md</div>
 <button type="button" id="open">打开 Obsidian 并保存</button>
-<small>没有自动跳转？点上面的按钮再试一次。</small>
-<footer>这是纯静态测试页，不上传、不存储笔记内容，也不会请求第三方接口。链接中 # 后面的内容仅在浏览器本地解析。请勿用此测试页传递涉密资料。</footer>
+<small id="hint">没有自动跳转？点上面的按钮再试一次。</small>
+<footer>纯静态跳转工具：不上传、不存储笔记正文，也不请求第三方接口。链接 # 后的参数由浏览器本地解析。长篇模式由 Obsidian 直接读取手机剪贴板；如果未复制预期正文，请取消跳转。请勿传递涉密资料。</footer>
 </main>
 <script>
 (function(){
@@ -34,9 +34,20 @@ footer{margin-top:22px;padding-top:18px;border-top:1px solid #eeeaf3;font-size:1
   const p=new URLSearchParams(location.hash.replace(/^#/,''));
   const vault=p.get('vault')||'我的知识库';
   const file=p.get('file')||'ChatGPT一键保存测试-2026-10-16.md';
+  const isClipboard=p.get('mode')==='clipboard'||p.has('clipboard');
   const content=p.has('content')?p.get('content'):'# Obsidian 一键保存测试\n\nHello Obsidian！\n\n来自 ChatGPT 的 HTTPS 跳转测试。';
   document.getElementById('file').textContent=file;
-  const u='obsidian://new?'+new URLSearchParams({vault,file,content}).toString();
+  // Obsidian 原生 URI 的 clipboard 标志，可避免把长篇正文放进 URL。
+  const u='obsidian://new?vault='+encodeURIComponent(vault)+'&file='+encodeURIComponent(file)
+    +(isClipboard?'&clipboard':'&content='+encodeURIComponent(content));
+  if(isClipboard){
+    document.getElementById('title').textContent='正在从剪贴板保存…';
+    document.getElementById('description').textContent='长篇模式：Obsidian 会读取手机剪贴板作为正文。若剪贴板不是目标笔记，请先取消。';
+    document.getElementById('hint').textContent='如果没有弹出系统提示，请点上方按钮。保存后检查笔记的开头与结尾。';
+  }
+  // 不影响跳转，同时减少原始 URL 参数在当前地址栏/浏览历史中继续显示。
+  try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}
+
   function openObsidian(){window.location.href=u}
   document.getElementById('open').addEventListener('click',openObsidian);
   setTimeout(openObsidian,700);
